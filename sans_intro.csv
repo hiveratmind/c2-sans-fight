@@ -1,40 +1,98 @@
-0,SansAnimation,,,,,,,,
-0,SansHead,ClosedEyes,,,,,,,
-0,SansText,ready?,,,,,,,
-0,BlackScreen,1,,,,,,,
-0,Sound,Flash,,,,,,,
-0.06666,BlackScreen,0,,,,,,,
-0,Sound,Flash,,,,,,,
-0,CombatZoneResizeInstant,239,226,404,391,,,,
-0,HeartTeleport,320,304,,,,,,
-0,HeartMode,0,,,,,,,
-0,SansBody,HandDown,,,,,,,
-0,SansHead,BlueEye,,,,,,,
-0,Sound,GasterBlaster,1.4,,,,,,
-0.26666,SansSlam,1,,,,,,,
-0.5,SansBody,HandUp,,,,,,,
-0,SansHead,NoEyes,,,,,,,
-0,BoneStab,1,54,0.16666,1,,,,
-0.7,HeartMode,0,,,,,,,
-0,SansBody,HandRight,,,,,,,
-0,Sound,Ding,,,,,,,
-0.4,Sound,GasterBlaster,1.4,,,,,,
-0.4,SineBones,20,-24,360,25,,,,
-1.1,SansAnimation,,,,,,,,
-0,GasterBlaster,1,0,0,189,246,0,0.333,0.26666
-0,GasterBlaster,1,0,0,259,166,90,0.333,0.26666
-0,GasterBlaster,1,640,480,449,366,180,0.333,0.26666
-0,GasterBlaster,1,640,480,379,446,270,0.333,0.26666
-0.9,GasterBlaster,1,0,0,189,176,45,0.333,0.26666
-0,GasterBlaster,1,640,0,449,176,135,0.333,0.26666
-0,GasterBlaster,1,640,480,449,436,225,0.333,0.26666
-0,GasterBlaster,1,0,480,189,436,315,0.333,0.26666
-0.9,GasterBlaster,1,0,0,189,246,0,0.333,0.26666
-0,GasterBlaster,1,0,0,259,166,90,0.333,0.26666
-0,GasterBlaster,1,640,480,449,366,180,0.333,0.26666
-0,GasterBlaster,1,640,480,379,446,270,0.333,0.26666
-0.7,GasterBlaster,2,0,240,139,306,0,0.666,0.5
-0,GasterBlaster,2,640,240,499,306,180,0.666,0.5
-3,SansHead,Default,,,,,,,
-0,SansText,here we go.,,,,,,,
-0,EndAttack,,,,,,,,
+0,SansAnimation,,,,,,,,, 
+0,SansHead,ClosedEyes,,,,,,,,, 
+0,SansText,ready?,,,,,,,,, 
+0,BlackScreen,1,,,,,,,,, 
+0,Sound,Flash,,,,,,,,, 
+0.08,BlackScreen,0,,,,,,,,, 
+0,Sound,Flash,,,,,,,,, 
+0,CombatZoneResizeInstant,239,226,404,391,,,,,,, 
+0,HeartTeleport,320,304,,,,,,,, 
+0,HeartMode,0,,,,,,,,, 
+
+# --- FAKE-OUT: gentle charge, false calm ---
+0,SansBody,HandDown,,,,,,,,, 
+0,SansHead,BlueEye,,,,,,,,, 
+0.3,Sound,Charge,,,,,,,,, 
+0.7,SansText,not quite...,,,,,,,,, 
+1.0,SansHead,NoEyes,,,,,,,,, 
+1.05,Sound,Ding,,,,,,,,, 
+
+# --- IRIS SLAM: sudden slam + tightening bone ring ---
+1.1,SansSlam,1,,,,,,,,, 
+1.12,Sound,GasterBlaster,1.2,,,,,,,, 
+1.2,SineBones,36,0,0,60,,,,,,,    # wide ring
+1.7,SineBones,28,0,0,40,,,,,,,    # tightens
+2.0,BoneStab,1,100,0.12,1,,,,,,, 
+2.25,BoneStab,1,540,0.12,1,,,,,,, 
+
+# --- TELEPORT POCKETS: player yanked left/right, rapid bones ---
+2.4,HeartTeleport,160,304,,,,,,,, 
+2.4,Sound,Teleport,,,,,,,,, 
+2.5,SansBody,HandRight,,,,,,,,, 
+2.55,SineBones,18,-30,180,20,,,,,,, 
+2.8,HeartTeleport,480,304,,,,,,,, 
+2.8,Sound,Teleport,,,,,,,,, 
+2.85,SansBody,HandLeft,,,,,,,,, 
+3.0,SineBones,18,30,0,20,,,,,,, 
+
+# --- BUILD: rotating blaster constellation spawns slowly ---
+3.2,SansHead,BlueEye,,,,,,,,, 
+3.2,Sound,GasterBlaster,1.3,,,,,,,, 
+3.25,GasterBlaster,1,0,0,170,220,0,0.25,0.2, 
+3.25,GasterBlaster,1,0,0,260,140,60,0.25,0.2, 
+3.25,GasterBlaster,1,640,480,420,360,180,0.25,0.2, 
+3.25,GasterBlaster,1,640,480,350,430,240,0.25,0.2, 
+
+# --- ROTATION + COLLAPSE: they rotate in, then slam to crossfire ---
+3.9,Sound,SpinUp,,,,,,,,, 
+4.0,GasterBlaster,2,0,240,170,190,30,0.5,0.35, 
+4.0,GasterBlaster,2,640,240,490,190,210,0.5,0.35, 
+4.2,Sound,GasterBlaster,1.6,,,,,,,, 
+4.25,GasterBlaster,3,320,0,320,360,120,0.66,0.5, 
+4.4,GasterBlaster,3,320,480,320,60,300,0.66,0.5, 
+
+# --- HOMING PUNISH: simulated by teleport + precise bone stab ---
+4.8,SansText,don't get comfy.,,,,,,,,, 
+5.0,HeartTeleport,320,120,,,,,,,, 
+5.0,Sound,Teleport,,,,,,,,, 
+5.05,BoneStab,1,320,0.09,1,,,,,,,   # aimed at new heart Y
+5.35,HeartTeleport,320,488,,,,,,,, 
+5.35,Sound,Teleport,,,,,,,,, 
+5.4,BoneStab,1,320,0.09,1,,,,,,, 
+
+# --- BLUE MODE: horizontal bone waves (feels like inverted control) ---
+5.8,SansHead,BlueEye,,,,,,,,, 
+5.8,SansBody,HandDown,,,,,,,,, 
+5.8,Sound,Bone,,,,,,,,, 
+5.85,SineBones,22,0,90,18,,,,,,,  # fast horizontal wavy bones
+6.2,SineBones,22,0,270,18,,,,,,, 
+6.55,Sound,Ding,,,,,,,,, 
+
+# --- PRESSURE PHASE: staggered blasters + chaining bones ---
+6.8,GasterBlaster,1,0,0,200,200,15,0.33,0.25, 
+6.9,GasterBlaster,1,640,480,430,380,195,0.33,0.25, 
+7.0,BoneStab,1,60,0.14,1,,,,,,, 
+7.12,BoneStab,1,580,0.14,1,,,,,,, 
+7.24,BoneStab,1,180,0.14,1,,,,,,, 
+7.36,BoneStab,1,440,0.14,1,,,,,,, 
+
+# --- FAKE END: sudden blackout then immediate second surge (keeps player on toes) ---
+7.6,BlackScreen,1,,,,,,,,, 
+7.65,Sound,Flash,,,,,,,,, 
+7.7,BlackScreen,0,,,,,,,,, 
+7.75,SansText,you think that's it?,,,,,,,,, 
+7.8,Sound,GasterBlaster,1.5,,,,,,,,, 
+
+# --- SURGE: compressed rapid-fire blaster cross with inner bone spiral ---
+8.0,GasterBlaster,2,0,240,160,210,45,0.5,0.35, 
+8.0,GasterBlaster,2,640,240,480,210,225,0.5,0.35, 
+8.15,SineBones,30,0,0,30,,,,,,,    # inner spiral feel
+8.4,BoneStab,1,320,0.08,1,,,,,,,   # center poke
+8.6,Sound,Flash,,,,,,,,, 
+
+# --- CALM DOWN + TAUNT ---
+9.0,SansHead,Default,,,,,,,,, 
+9.05,SansBody,HandUp,,,,,,,,, 
+9.1,SansText,that's more like it.,,,,,,,,, 
+9.5,HeartMode,0,,,,,,,,, 
+9.6,EndAttack,,,,,,,,, 
