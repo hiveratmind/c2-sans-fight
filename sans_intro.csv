@@ -1,4 +1,4 @@
-0,SansAnimation,,,,,,,,
+0,SansAnimation,,,,,,,,,
 0,SansHead,ClosedEyes,,,,,,,,,
 0,SansText,ready?,,,,,,,, 
 0,BlackScreen,1,,,,,,,, 
@@ -20,27 +20,21 @@
 0,Sound,Ding,,,,,,,, 
 0.4,Sound,GasterBlaster,1.4,,,,,,, 
 0.4,SineBones,20,-24,360,25,,,,, 
-1.1,SansAnimation,,,,,,,, 
-
-; Dynamic blaster placement with exactly 10 columns
-0,GasterBlaster,1,0,0,189,246,15,0.333,0.26666
-0,GasterBlaster,1,0,0,259,166,75,0.333,0.26666
-0,GasterBlaster,1,640,480,449,366,165,0.333,0.26666
-0,GasterBlaster,1,640,480,379,446,255,0.333,0.26666
-0.9,GasterBlaster,1,0,0,189,176,35,0.333,0.26666
-0,GasterBlaster,1,640,0,449,176,125,0.333,0.26666
-0,GasterBlaster,1,640,480,449,436,215,0.333,0.26666
-0,GasterBlaster,1,0,480,189,436,305,0.333,0.26666
-
-; Slight stagger and randomness for extra challenge
-0.9,GasterBlaster,1,0,0,189,246,5,0.333,0.26666
-0,GasterBlaster,1,0,0,259,166,85,0.333,0.26666
-0,GasterBlaster,1,640,480,449,366,175,0.333,0.26666
-0,GasterBlaster,1,640,480,379,446,265,0.333,0.26666
-0.7,GasterBlaster,2,0,240,139,306,10,0.666,0.5
-0,GasterBlaster,2,640,240,499,306,170,0.666,0.5
-
-3,SansHead,Default,,,,,,,, 
+1.1,SansAnimation,,,,,,,,,
+0,GasterBlaster,1,0,0,189,246,0,0.333,0.26666
+0,GasterBlaster,1,0,0,259,166,90,0.333,0.26666
+0,GasterBlaster,1,640,480,449,366,180,0.333,0.26666
+0,GasterBlaster,1,640,480,379,446,270,0.333,0.26666
+0.9,GasterBlaster,1,0,0,189,176,45,0.333,0.26666
+0,GasterBlaster,1,640,0,449,176,135,0.333,0.26666
+0,GasterBlaster,1,640,480,449,436,225,0.333,0.26666
+0,GasterBlaster,1,0,480,189,436,315,0.333,0.26666
+0.9,GasterBlaster,1,0,0,189,246,0,0.333,0.26666
+0,GasterBlaster,1,0,0,259,166,90,0.333,0.26666
+0,GasterBlaster,1,640,480,449,366,180,0.333,0.26666
+0,GasterBlaster,1,640,480,379,446,270,0.333,0.26666
+0.7,GasterBlaster,2,0,240,139,306,0,0.666,0.5
+0,GasterBlaster,2,640,240,499,306,180,0.666,0.5
+3,SansHead,Default,,,,,,,,,
 0,SansText,here we go.,,,,,,,, 
-0,EndAttack,,,,,,,, 
-
+0,EndAttack,,,,,,,,,
